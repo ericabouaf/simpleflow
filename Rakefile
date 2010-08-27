@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "simpleflow"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Simple workflow execution}
+    gem.description = %Q{Simpleflow has a simple engine that executes modules in a loop. The workflows are declarative, which means that you can static-check them and safely run user workflows. Modules are created easily in ruby so you can quickly write wrappers around libraires.}
     gem.email = "eric.abouaf@gmail.com"
     gem.homepage = "http://github.com/neyric/simpleflow"
     gem.authors = ["neyric"]
