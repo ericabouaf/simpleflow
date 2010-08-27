@@ -5,12 +5,12 @@
 
 Gem::Specification.new do |s|
   s.name = %q{simpleflow}
-  s.version = "0.0.0"
+  s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["neyric"]
   s.date = %q{2010-08-27}
-  s.description = %q{TODO: longer description of your gem}
+  s.description = %q{Simpleflow has a simple engine that executes modules in a loop. The workflows are declarative, which means that you can static-check them and safely run user workflows. Modules are created easily in ruby so you can quickly write wrappers around libraires.}
   s.email = %q{eric.abouaf@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE",
@@ -23,7 +23,19 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
+     "init.rb",
      "lib/simpleflow.rb",
+     "lib/simpleflow/dns_resolve.rb",
+     "lib/simpleflow/http.rb",
+     "lib/simpleflow/json.rb",
+     "lib/simpleflow/jsonpath.rb",
+     "lib/simpleflow/liquid.rb",
+     "lib/simpleflow/object_builder.rb",
+     "lib/simpleflow/ping.rb",
+     "lib/simpleflow/string_builder.rb",
+     "lib/simpleflow/urlencode.rb",
+     "lib/simpleflow/yql.rb",
+     "simpleflow.gemspec",
      "test/helper.rb",
      "test/test_simpleflow.rb"
   ]
@@ -31,7 +43,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
-  s.summary = %q{TODO: one-line summary of your gem}
+  s.summary = %q{Simple workflow execution}
   s.test_files = [
     "test/helper.rb",
      "test/test_simpleflow.rb"
